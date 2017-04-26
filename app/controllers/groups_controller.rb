@@ -3,6 +3,10 @@ class GroupsController < ApplicationController
    @groups = Group.all
   end
 
+  def show
+    @gruop = Group.find(params[:id])
+  end
+  
   def new
     @group = Group.new
   end
